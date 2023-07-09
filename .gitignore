@@ -33,5 +33,5 @@ gradle-app.setting
 !/tmp/
 
 tmp/*
-socialmediaextracter/spiders/__pycache__/*
-socialmediaextracter/__pycache__/*
+data_process/__pycache__/*
+#socialmediaextracter/__pycache__/*
