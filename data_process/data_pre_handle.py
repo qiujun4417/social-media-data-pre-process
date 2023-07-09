@@ -5,7 +5,7 @@ from mongodbUtil import MongodbUtil
 
 
 def remove_pre_fix_for_source_field():
-    reader = MongodbCorpusReader('mongodb://nick_2014:nick_2088_21@localhost:32774/?authMechanism=DEFAULT', 'user')
+    reader = MongodbCorpusReader('mongodb://nick_2014:nick_2088_21@localhost:32774/?authMechanism=DEFAULT', 'users')
     result = reader.__iter__(['_id', 'source'])
     process_count = 0
     for field_dict in result:
