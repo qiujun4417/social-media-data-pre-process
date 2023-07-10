@@ -11,6 +11,10 @@ class MongodbCorpusReader(object):
         for item in self._collection.find():
             yield {field: item[field] for field in fields_to_iterate}
 
+    def find_all(self):
+        for item in self._collection.find():
+            yield item
+
     def getCollection(self):
         return self._collection
 
