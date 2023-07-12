@@ -46,7 +46,7 @@ def main():
     logging.info("comments processed_count: %d", comments_processed_count)
     # 对content进行分词、停词处理
     fenci_and_stop_words('comments')
-    # 对文本内容进行聚类
+
 
 if __name__ == '__main__':
     main()
