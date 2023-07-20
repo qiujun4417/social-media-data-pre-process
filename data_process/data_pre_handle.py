@@ -11,8 +11,8 @@ def remove_pre_fix_for_source_field(field_filter, collection_name, prefix, targe
     result = reader.__iter__(field_filter)
     process_count = 0
     for field_dict in result:
-        field_id = field_dict['_id']
-        field_content = field_dict['content']
+        field_id = field_dict[field_filter[0]]
+        field_content = field_dict[field_filter[1]]
         if field_content:
             field_content = field_content.replace(prefix, '')
             value_fields = {'field': target_field, 'value': field_content}
